@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Movie Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: url(images/coco.jpeg) no-repeat 
+            top center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size:cover;
+            background-size: cover;
+        }
+
+        .container-fluid {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    </style>
+</head>
+<!--  -->
+<body class="bg-secondary text-white">
+    <!-- main content - start -->
+    <!-- untuk latar pembuatan navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark
+    fixed-top bg-dark">
+        <!-- untuk menambahkan logo pada navigation bar -->
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" height="30px">
+        </a>
+
+        <!-- untuk menyesuaikan navigation bar dengan layar device -->
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- list menu navigation bar -->
+        <div class="collapse navbar-collapse"
+            id="navbarCollapse">
+            <!-- letak menu akan auto mulai dari pojok kiri -->
+            <ul class="navbar-nav mr-auto">
+                <!-- untuk mengisi list menu navbar yang aktif jika diklik -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">TV Episodes</a>
+                </li>
+            </ul>
+
+            <!-- untuk pembuatan form yang berada pada baris yang sama -->
+            <form class="form-inline mt-2 mt-md-0">
+                <!-- untuk mengontrol inputan form -->
+                <input class="form-control mr-sm-2" 
+                type="text" placeholder="Search"
+                aria-label="Search">
+                <!-- button cari untuk pencarian -->
+                <button class="btn btn-outline-success my-2
+                    my-sm-0" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- class container fluid mengatur lebar layout maksimal -->
+    <div class="container-fluid mt-5 pt-1">
+        <!-- div class container digunakan untuk mengatur tata letak halaman web (layout) -->
+        <div class="container">
+            <!-- card untuk dasar background -->
+            <div class="card bg-dark text-white mt-4">
+                <!-- card untuk bagian body -->
+                <div class="card-body bg-dark">
+                    <video width="100%" controls>
+                        <source src="videos/Coco-Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white mt-4">
+                <div class="card-body bg-dark">
+                    <!-- class row digunakan untuk membuat baris -->
+                    <div class="row">
+                        <!-- class col-sm digunakan untuk mengatur grid pada monitor berukuran tablet -->
+                        <div class="col-sm-2">
+                            <img src="images/coco.jpeg" class="img-fluid">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4>Coco (2017)</h4>
+                            <p class="mt-0 pt-0 mb-0 pb-0 font-weight-bold">
+                                Rated: 8.4 of 10 with 1.3K votes.
+                            </p>
+                            <p class="text-justify">
+                                Miguel pursues his love for singing in spite his
+                                family's ban on music. He stumbles into the Land
+                                of The Dead, where he learns about his great- 
+                                great-grandfather who was a legendary singer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-2 pb-4">
+                <div class="col-sm-2">
+                    <div class="card bg-dark text-white mt-4">
+                        <div class="card-body bg-dark">
+                            <img src="images/m-7.jpeg" class="img-fluid">
+                        </div>
+                        <!-- bagian footer per card untuk judul movie -->
+                        <div class="card-footer bg-light text-dark
+                            text-center font-weight-bold">
+                            Brave (2012)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card bg-dark text-white mt-4">
+                        <div class="card-body bg-dark">
+                            <img src="images/m-2.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-light text-dark
+                            text-center font-weight-bold">
+                            Encanto (2021)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card bg-dark text-white mt-4">
+                        <div class="card-body bg-dark">
+                            <img src="images/m-3.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-light text-dark
+                            text-center font-weight-bold">
+                            Raya and The Last Dragon (2021)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2">
+                    <div class="card bg-dark text-white mt-4">
+                        <div class="card-body bg-dark">
+                            <img src="images/m-4.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-light text-dark
+                            text-center font-weight-bold">
+                            Turning Red (2022)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card bg-dark text-white mt-4">
+                        <div class="card-body bg-dark">
+                            <img src="images/m-5.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-light text-dark
+                            text-center font-weight-bold">
+                            Up (2009)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card bg-dark text-white mt-4">
+                        <div class="card-body bg-dark">
+                            <img src="images/m-6.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-light text-dark
+                            text-center font-weight-bold">
+                            Finding Dory (2016)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- main content - end -->
+
+    <!-- Bootstrap core JavaScript
+    Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>

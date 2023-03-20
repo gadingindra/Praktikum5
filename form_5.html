@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Bootstrap 4: Basic - Form</title>
+
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- main content - start -->
+    <!-- div class container digunakan untuk mengatur tata letak halaman web (layout) -->
+    <div class="container">
+        <form>
+            <!-- form-group untuk mengelompokkan per label/textbox pada form -->
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <!-- kontrol pada form untuk menerima inputan -->
+                <input type="text" class="form-control"
+                id="usr">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control"
+                id="pwd">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5"
+                id="comment"></textarea>
+            </div>
+
+            <!-- form-check-inline untuk pengecekan dalam satu baris yang sama -->
+            <div class="form-check-inline">
+                <!-- label untuk pengecekan form -->
+                <label class="form-check-label">
+                    <!-- input untuk pengecekan form (centang) -->
+                    <input type="checkbox" class="form-check-input"
+                    value=""> Option 1
+                </label>
+            </div>
+
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input"
+                    value=""> Option 2
+                </label>
+            </div>
+
+            <br>
+            
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input"
+                    name="optradio"> Option 1
+                </label>
+            </div>
+
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input"
+                    name="optradio"> Option 2
+                </label>
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <label for="sel1">Select list:</label>
+                <select class="form-control id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">File</label>
+                <input type="file" class="form-control-file border">
+            </div>
+
+            <!-- button submit untuk pengiriman data -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- main content - end -->
+
+    <!-- Bootstrap core JavaScript
+    Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>
